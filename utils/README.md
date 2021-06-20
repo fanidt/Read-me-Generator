@@ -3,29 +3,29 @@
   ##Link to deployed application/Repository:
   efq
 
- #Table of contents
- -Description
- -Badges
-  -Screenshot
- -Installation
- -Usage
- -Support
-  -Roadmap
- -Contributions
- -Authors
- -License
+ #Table of contents <br />
+ -Description<br />
+ -Badges<br />
+  -Screenshot<br />
+ -Installation<br />
+ -Usage<br />
+ -Support<br />
+  -Roadmap<br />
+ -Contributions<br />
+ -Authors<br />
+ -License<br />
 
-  ##Description:
+  ##Description:<br />
   cew
 
   
-  ##Badges:
+  ##Badges:<br />
   ![alt text](https://img.shields.io/badge/license-MIT-green)
   
-  ##Screenshot:
+  ##Screenshot:<br />
     ![alt text](efv)
   
-  ##Installation:
+  ##Installation:<br />
   ef
 
   ##Usage:
