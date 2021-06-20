@@ -18,13 +18,13 @@ const questions = [
     },
     {
         type: "Input",
-        message: "Indicate the plans for the future of this application",
+        message: "Indicate the plans for the future of this application if no plans press enter",
         name: "roadmap"
 
     },
     {
         type: "input",
-        message: "What is the Username?",
+        message: "What is the Username? (contact username)",
         name: "username"
 
     },
@@ -42,7 +42,7 @@ const questions = [
     },
     {
         type:"input",
-        message:"If you want to include a screenshot enter in the form of ![alt text](http://url/to/img.png), else press enter",
+        message:"If you want to include a screenshot enter in the form of http://url/to/img.png (link the path to the image), else press enter",
         name: "screenshot",
         
 
@@ -60,7 +60,7 @@ const questions = [
     },
     {
         type:"input",
-        message:"Stete if you are open for contributions and the requirements for them to be accepted",
+        message:"State if you are open for contributions and the requirements for them to be accepted",
         name:"contribute"
 
     },
@@ -76,11 +76,19 @@ const questions = [
 
     },
     {
-        type: "input",
+        type: "list",
         message: "List the license",
-        name: "license"
+        name: "license",
+        choices: ["MIT", "osl-3.0", "gpl", "apache-2.0", "artistic-2.0","Unlicensed"]
 
-    }
+    },
+    {
+        type:"input",
+        message:"Provide user story, else press enter",
+        name:"userstory"
+
+    },
+    
 
 ];
 
