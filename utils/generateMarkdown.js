@@ -37,7 +37,7 @@ function isScreenshot(data) {
     return ``
   }
   else {
-    return `##Screenshot:
+    return `##Screenshot: <br />
     ![alt text](${data.screenshot})
   `}
 }
@@ -47,7 +47,7 @@ function isUserStory(data) {
     return ``
   }
   else {
-    return `##User Story:
+    return `##User Story: <br />
   ${data.userstory}
   `}
 }
@@ -57,7 +57,7 @@ function isRoadmap(data) {
     return ``
   }
   else {
-    return `##Roadmap:
+    return `##Roadmap: <br />
   ${data.roadmap}`
   }
 }
@@ -68,7 +68,7 @@ function TableofcontentsSTORY(data) {
     return ``
   }
   else { return `
-  -User Story` }
+  -User Story <br />` }
 }
 // table of content Roadmap
 function TableofcontentsRoadmap(data) {
@@ -76,7 +76,7 @@ function TableofcontentsRoadmap(data) {
     return ``
   }
   else { return `
-  -Roadmap` }
+  -Roadmap <br />` }
 }
 
 //table of contents screenshot
@@ -85,7 +85,7 @@ function Tableofcontentsscreenshot(data) {
     return ``
   }
   else { return `
-  -Screenshot` }
+  -Screenshot <br />` }
 }
 
 /* MAYBE ADD DIFFERENT AUTHOR RECOGNITION
@@ -102,50 +102,50 @@ return authorArray
 function generateMarkdown(data) {
   return `# ${data.fileName}
 
-  ##Link to deployed application/Repository:
+  ##Link to deployed application/Repository: <br />
   ${data.link}
 
- #Table of contents
- -Description`+ TableofcontentsSTORY(data) + `
- -Badges`+ Tableofcontentsscreenshot(data) + `
- -Installation
- -Usage
- -Support`+ TableofcontentsRoadmap(data) + `
- -Contributions
- -Authors
- -License
+ #Table of contents <br />
+ -Description <br />`+ TableofcontentsSTORY(data) + `
+ -Badges <br />`+ Tableofcontentsscreenshot(data) + `
+ -Installation <br />
+ -Usage <br />
+ -Support <br />`+ TableofcontentsRoadmap(data) + `
+ -Contributions <br />
+ -Authors <br />
+ -License <br />
 
-  ##Description:
+  ##Description: <br />
   ${data.description}
 
   ` + isUserStory(data) +
     `
-  ##Badges:
+  ##Badges: <br />
   ![alt text](`+ renderLicenseBadge(data) + `)
   
   ` + isScreenshot(data) +
     `
-  ##Installation:
+  ##Installation: <br />
   ${data.installation}
 
-  ##Usage:
+  ##Usage: <br />
   ${data.HowTo}
 
-  ##Support:
-  Contact us by email at: ${data.email}
+  ##Support: <br />
+  Contact us by email at: ${data.email} <br />
   Contact us at Github at: https://github.com/${data.username}
 
   `+ isRoadmap(data) + `
 
-  ##Contributions:
+  ##Contributions: <br />
   ${data.contribute}
 
-  ##Authors:
+  ##Authors: <br />
   ${data.Authors}
   
-  ##Licence:
-  ${data.license}
-  License Link: `+ renderLicenseLink(data) + `
+  ##Licence: <br />
+  ${data.license} <br />
+  License Link: <br />`+ renderLicenseLink(data) + `
 
 `;
 }
