@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+//  packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// TODO: Create an array of questions for user input
+//  array of questions for user input
 const questions = [
     {
         type: "input",
@@ -17,15 +17,52 @@ const questions = [
         name: "description"
     },
     {
+        type: "Input",
+        message: "Indicate the plans for the future of this application",
+        name: "roadmap"
+
+    },
+    {
         type: "input",
         message: "What is the Username?",
         name: "username"
 
     },
     {
+        type:"input",
+        message:"List of authors, please seperate with space",
+        name:"Authors"
+
+    },
+    {
+        type:"input",
+        message:"Privide the link to the deployed website or the github repository",
+        name:"link"
+
+    },
+    {
+        type:"input",
+        message:"If you want to include a screenshot enter in the form of ![alt text](http://url/to/img.png), else press enter",
+        name: "screenshot",
+        
+
+    },
+    {
+        type:"input",
+        message:"Provide an email adress for contact",
+        name:"email"
+
+    },
+    {
         type: "input",
         message: "What is the installation process?",
         name: "installation"
+    },
+    {
+        type:"input",
+        message:"Stete if you are open for contributions and the requirements for them to be accepted",
+        name:"contribute"
+
     },
     {
         type: "input",
@@ -47,6 +84,10 @@ const questions = [
 
 ];
 
+
+
+
+
 const markdown = data =>  generateMarkdown(data)
 
 
@@ -54,7 +95,7 @@ const markdown = data =>  generateMarkdown(data)
 
 
 
-// TODO: Create a function to write README file
+//  function to write README file
 function writeToFile(data) {
   return  fs.writeFile ("./utils/README.md", markdown(data) , function(err)
 {
@@ -74,7 +115,7 @@ function writeToFile(data) {
 
 }
 
-// TODO: Create a function to initialize app
+//  function to initialize app
 function init() {
 inquirer.prompt(questions)
 .then(writeToFile)
