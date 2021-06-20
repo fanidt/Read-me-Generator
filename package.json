@@ -10,13 +10,5 @@
   "dependencies": {
     "inquirer": "^6.3.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fanidt/Read-me-Generator.git"
-  },
-  "bugs": {
-    "url": "https://github.com/fanidt/Read-me-Generator/issues"
-  },
-  "homepage": "https://github.com/fanidt/Read-me-Generator#readme",
   "description": ""
 }
