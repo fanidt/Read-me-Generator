@@ -70,12 +70,6 @@ const questions = [
         name: "HowTo"
     },
     {
-        type: "input",
-        message: "Who should be credited(list collaborators, organizations and other contributors)",
-        name: "Contributions"
-
-    },
-    {
         type: "list",
         message: "List the license",
         name: "license",

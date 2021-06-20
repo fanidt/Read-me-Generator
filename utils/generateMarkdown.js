@@ -20,11 +20,11 @@ function renderLicenseLink(data) {
   if (data.license === "Unlicensed") {
     return `Unlicensed`
   }
-  else if (data.license === "MIT") { return `https://opensource.org/licenses/MIT` }
-  else if (data.license === "osl-3.0") { return `https://opensource.org/licenses/OSL-3.0` }
-  else if (data.license === "gpl") { return `https://opensource.org/licenses/GPL-3.0` }
-  else if (data.license === "apache-2.0") { return `https://opensource.org/licenses/Apache-2.0` }
-  else if (data.license === "artistic-2.0") { return `https://opensource.org/licenses/Artistic-2.0` }
+  else if (data.license === "MIT") { return `License Link: https://opensource.org/licenses/MIT` }
+  else if (data.license === "osl-3.0") { return `License Link: https://opensource.org/licenses/OSL-3.0` }
+  else if (data.license === "gpl") { return `License Link: https://opensource.org/licenses/GPL-3.0` }
+  else if (data.license === "apache-2.0") { return `License Link: https://opensource.org/licenses/Apache-2.0` }
+  else if (data.license === "artistic-2.0") { return `License Link: https://opensource.org/licenses/Artistic-2.0` }
 }
 
 // TODO: Create a function that returns the license section of README
@@ -68,7 +68,7 @@ function TableofcontentsSTORY(data) {
     return ``
   }
   else { return `
-  -User Story <br />` }
+  -[User Story](##User Story) <br />` }
 }
 // table of content Roadmap
 function TableofcontentsRoadmap(data) {
@@ -76,7 +76,7 @@ function TableofcontentsRoadmap(data) {
     return ``
   }
   else { return `
-  -Roadmap <br />` }
+  -[Roadmap](##Roadmap) <br />` }
 }
 
 //table of contents screenshot
@@ -85,7 +85,7 @@ function Tableofcontentsscreenshot(data) {
     return ``
   }
   else { return `
-  -Screenshot <br />` }
+  -[Screenshot:](##Screenshot) <br />` }
 }
 
 /* MAYBE ADD DIFFERENT AUTHOR RECOGNITION
@@ -106,14 +106,14 @@ function generateMarkdown(data) {
   ${data.link}
 
  #Table of contents <br />
- -Description <br />`+ TableofcontentsSTORY(data) + `
- -Badges <br />`+ Tableofcontentsscreenshot(data) + `
- -Installation <br />
- -Usage <br />
- -Support <br />`+ TableofcontentsRoadmap(data) + `
- -Contributions <br />
- -Authors <br />
- -License <br />
+ -[Description](##Description) <br />`+ TableofcontentsSTORY(data) + `
+ -[Badges](##Badges) <br />`+ Tableofcontentsscreenshot(data) + `
+ -[Installation](##Installation) <br />
+ -[Usage](##Usage) <br />
+ -[Support](##Support) <br />`+ TableofcontentsRoadmap(data) + `
+ -[Contributions](##Contributions) <br />
+ -[Authors](##Authors) <br />
+ -[License](##Licence) <br />
 
   ##Description: <br />
   ${data.description}
@@ -145,7 +145,7 @@ function generateMarkdown(data) {
   
   ##Licence: <br />
   ${data.license} <br />
-  License Link: <br />`+ renderLicenseLink(data) + `
+  `+ renderLicenseLink(data) + `
 
 `;
 }
