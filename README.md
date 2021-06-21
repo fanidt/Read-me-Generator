@@ -26,7 +26,7 @@
   ![alt text](https://img.shields.io/badge/license-MIT-green)
   
   ##Screenshot: <br />
-    ![alt text](https://img.youtube.com/BAidZ8ia4k4/0.jpg)(https://www.youtube.com/embed/BAidZ8ia4k4)
+    ![alt text](./assets/readmegenerator.png)(https://www.youtube.com/embed/BAidZ8ia4k4)
   
   ##Installation: <br />
   Download the file to your computer, <br />Open the file in the command line, <br />Type npm init, <br /> After selecting all the options,  <br />Type npm install
