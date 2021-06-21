@@ -85,7 +85,7 @@ function Tableofcontentsscreenshot(data) {
     return ``
   }
   else { return `
-  -[Screenshot:](##Screenshot) <br />` }
+  -[Screenshot](##Screenshot) <br />` }
 }
 
 /* MAYBE ADD DIFFERENT AUTHOR RECOGNITION
