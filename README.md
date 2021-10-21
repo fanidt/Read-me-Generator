@@ -5,9 +5,9 @@
 
  #Table of contents <br />
  -[Description](##Description) <br />
-  -[User Story](##User Story) <br />
+ -[User Story](##User Story) <br />
  -[Badges](##Badges) <br />
-  -[Screenshot](##Screenshot) <br />
+ -[Screenshot](##Screenshot) <br />
  -[Installation](##Installation) <br />
  -[Usage](##Usage) <br />
  -[Support](##Support) <br />
