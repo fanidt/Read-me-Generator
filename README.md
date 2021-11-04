@@ -32,7 +32,10 @@
   Download the file to your computer, <br />Open the file in the command line, <br />Type npm init, <br /> After selecting all the options,  <br />Type npm install
 
   ## Usage: <br />
-    Open the file through the command line, <br /> Type node index, <br /> Answer the questions, <br /> Open utils file and your readme will be generated
+    Open the file through the command line,
+    Type node index, 
+    Answer the questions, 
+    Open utils file and your readme will be generated
 
   ## Support: <br />
   Contact us by email at: deltorofanie@gmail.com <br />
